@@ -86,7 +86,7 @@ p {
 }
 .section.hero {
   padding-bottom: 0px;
-  background-image: url(http://uploads.webflow.com/56303db6792da40716871337/5631651586d945b92951b22b_BackgroundGreen.png);
+  background-image: url(../img/laptopmock.jpg);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;

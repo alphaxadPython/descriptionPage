@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html
+    class="wf-montserrat-n4-active wf-montserrat-n7-active wf-bitter-n4-active wf-bitter-n7-active wf-bitter-i4-active wf-active w-mod-js w-mod-no-touch w-mod-video w-mod-no-ios"
+    style="">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Smart Class</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Webflow">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script src="js/webfont.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Montserrat:400,700", "Bitter:400,700,400italic"]
+            }
+        });
+    </script>
+    <script type="text/javascript" src="js/modernizr-2.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/spiel.js"></script>
+</head>
+
+<body>
+    <div id="poster" class="mask poster" onclick="hideModal('poster')">
+        <div class="modal">
+            <h1 class="modalheader">POSTER &amp; PITCH</h1><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/posterPoster.pdf"
+                class="modallink" target="_blank">Poster</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/posterPitchSlide.pdf"
+                class="modallink" target="_blank">Pitch Slide</a>
+        </div>
+    </div>
+    <div id="hifi" class="mask hifi" onclick="hideModal('hifi')">
+        <div class="modal">
+            <h1 class="modalheader">HI-FI PROTOTYPE</h1><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/Spiel.ipa"
+                class="modallink" target="_blank">Download IPA</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/hifiREADME.pdf"
+                class="modallink" target="_blank">README</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/hifiMidwayMilestone.pptx"
+                target="_blank" class="modallink label">Midway Milestone</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/hifiFinalReport.pdf"
+                class="modallink presentation" target="_blank">Final Report</a>
+        </div>
+    </div>
+    <div id="heuristic" class="mask heuristic" onclick="hideModal('heuristic')">
+        <div class="modal">
+            <h1 class="modalheader">HEURISTIC EVALUATION</h1>
+            <a href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/heuristicHeuristicEvaluation.pdf"
+                class="modallink" target="_blank">Heuristic Evaluation</a>
+        </div>
+    </div>
+    <div id="lowfi" class="mask lowfi" onclick="hideModal('lowfi')">
+        <div class="modal">
+            <h1 class="modalheader">LOW-FI PROTOTYPE</h1>
+            <div class="label">Presentation:</div><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/lowfiPresentation.pdf"
+                class="modallink presentation" target="_blank">PDF</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/lowfiPresentation.pptx"
+                class="modallink presentation" target="_blank">PPT</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/lowfiTestingScript.pdf"
+                class="modallink" target="_blank">Prototype Testing Script</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/lowfiWrittenReport.pdf"
+                class="modallink" target="_blank">Written Report with Prototype</a>
+        </div>
+    </div>
+    <div id="concept" class="mask conceptvideo" onclick="hideModal('concept')">
+        <div class="modal">
+            <h1 class="modalheader">CONCEPT VIDEO</h1>
+            <div class="label concept">Presentation/Storyboards:</div><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/conceptvideoPresentation.pdf"
+                class="modallink presentation" target="_blank">PDF</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/conceptPresentation.pptx"
+                class="modallink presentation right" target="_blank">PPT</a><a href="https://vimeo.com/142590174"
+                class="modallink" target="_blank">Watch the Video</a>
+        </div>
+    </div>
+    <div id="pov" class="mask pov" onclick="hideModal('pov')">
+        <div class="modal">
+            <h1 class="modalheader">POV &amp; EXPERIENCE PROTOTYPES</h1>
+            <div class="label">Presentation:</div><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/povPresentation.pdf"
+                class="modallink presentation" target="_blank">PDF</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/povPresentation.pptx"
+                class="modallink presentation right" target="_blank">PPT</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/povWrittenReport.pdf"
+                class="modallink" target="_blank">Written Report</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/povPOVHMW.pdf"
+                class="modallink" target="_blank">List of POV's and HMW's</a>
+        </div>
+    </div>
+    <div id="needfinding" class="mask needfinding" onclick="hideModal('needfinding')">
+        <div class="modal">
+            <h1 class="modalheader">NEEDFINDING</h1>
+            <div class="label">Presentation:</div><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/needfindingPresentation.pdf"
+                class="modallink presentation" target="_blank">PDF</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/needfindingPresentation.pptx"
+                class="modallink presentation right" target="_blank">PowerPoint</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/needfindingEmpathyMap.pdf"
+                class="modallink" target="_blank">Empathy Map List</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/needfindingInterviewQuestions.pdf"
+                class="modallink" target="_blank">Interview Questions</a>
+        </div>
+    </div>
+    <div id="medium-fi" class="mask mediumfi" onclick="hideModal('medium-fi')">
+        <div class="modal">
+            <h1 class="modalheader">MEDIUM-FI PROTOTYPE</h1>
+            <div class="label">Presentation:</div><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/mediumfiPresentation.pdf"
+                class="modallink presentation" target="_blank">PDF</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/mediumfiPresentation.pptx"
+                class="modallink presentation right">PowerPoint</a><a
+                href="https://projects.invisionapp.com/share/A94QAQ2NX#/screens/111617992" class="modallink"
+                target="_blank">Prototype on InVision</a><a
+                href="https://hci.stanford.edu/courses/cs147/2015/au/projects/crowd_power/spiel/files/mediumfiREADME.pdf"
+                class="modallink" target="_blank">README</a>
+        </div>
+    </div>
+    <header class="w-section navbar">
+        <div class="w-container">
+            <div class="w-row">
+                <div class="w-col w-col-4"><img src="img/logo-header.png" class="logo" width="25">
+                    <div class="app-name">Smart Class</div>
+                </div>
+                <div class="w-col w-col-8 nav-column">
+                    <a href="#about" class="nav-link">ABOUT</a>
+                    <a href="#team" class="nav-link">TEAM</a>
+                    <a href="#prototypes" class="nav-link">PROTOTYPES</a>
+                    <a href="#process" class="nav-link">DESIGN PROCESS</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="w-section section hero">
+        <div class="w-container">
+            <div class="w-row">
+                <div class="w-col w-col-6"><img src="img/mockup.png" class="hero-iphone" width="330px"></div>
+                <div class="w-col w-col-6 call-to-action">
+                    <h1 class="hero-header">The Best Online Course Platform</h1>
+                    <p class="hero-subtitle">Get Your Best Courses From Smart Class</p><a href="#prototypes"
+                        class="button">Platform Prototypes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-section w-hidden-small w-hidden-tiny section grey"></div>
+    <div id="about" class="w-section w-clearfix section">
+        <div class="w-container">
+            <div class="w-row">
+                <div class="w-col w-col-6">
+                    <div style="padding-top: 56.27659574468085%;" class="w-embed w-video">
+                        <iframe class="embedly-embed"
+                            src="http://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F142590174&amp;url=https%3A%2F%2Fvimeo.com%2F142590174&amp;image=http%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F539926655_1280.jpg&amp;key=c4e54deccf4d4ec997a64902e9a30300&amp;type=text%2Fhtml&amp;schema=vimeo"
+                            scrolling="no" allowfullscreen="" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="w-col w-col-6 center">
+                    <h1>ABOUT</h1>
+                    <p>Smart Class provides Best Free and Paid Online Courses to students of their choice! From
+                        Experienced Teachers across the Globe! Vist us and take your desired course now!</p> <br><br>
+                        <a href="https://alphaxadpython.github.io/SmartClass/home.html" class="button">Take Course Now!!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="team" class="w-section section grey">
+        <h1>OUR TEAM</h1>
+        <div class="w-container teamcontainer">
+            <div class="w-row">
+                <div class="w-col w-col-3 w-col-small-6 " style="margin-bottom: 30px;">
+                   <div class="card">
+                      <img src="img/hybrid.jpg" style="height: 300px; width: 100%" class="card-img-top">
+
+                        <div class="card-body">
+                             <div class="teamlabel">HYBRID JOHN</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="teamposition">Supervisor &amp; Project Manager</div>
+
+                       </div>
+                   </div>
+                </div>
+
+                <div class="w-col w-col-3 w-col-small-6 " style="margin-bottom: 30px;">
+                    <div class="card">
+                       <img src="img/yohana.jpg" style="height: 300px; width: 100%" class="card-img-top">
+ 
+                         <div class="card-body">
+                              <div class="teamlabel">YOHANA MIDAMI</div>
+                         </div>
+                         <div class="card-body">
+                             <div class="teamposition">Design &amp; Project Presenter</div>
+ 
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="w-col w-col-3 w-col-small-6 " style="margin-bottom: 30px;">
+                    <div class="card">
+                       <img src="img/gil.png" style="height: 300px; width: 100%" class="card-img-top">
+ 
+                         <div class="card-body">
+                              <div class="teamlabel">RAMADAN BAKARI</div>
+                         </div>
+                         <div class="card-body">
+                             <div class="teamposition">Designer &amp; Project Organiser</div>
+ 
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="w-col w-col-3 w-col-small-6 " style="margin-bottom: 30px;">
+                    <div class="card">
+                       <img src="img/doglus.jpg" style="height: 300px; width: 100%" class="card-img-top">
+ 
+                         <div class="card-body">
+                              <div class="teamlabel">DOGLUS JAMES</div>
+                         </div>
+                         <div class="card-body">
+                             <div class="teamposition">Programmer &amp; Project coder</div>
+ 
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="w-row">
+                <div class="w-col w-col-3 w-col-small-6 " style="margin-bottom: 30px;">
+                   <div class="card">
+                      <img src="img/Katherine%2520Liu.png" style="height: 300px; width: 100%" class="card-img-top">
+
+                        <div class="card-body">
+                             <div class="teamlabel">ALPHA JOZEE</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="teamposition">Coding &amp; Sytstem Mantainance</div>
+
+                       </div>
+                   </div>
+                </div>
+
+                <div class="w-col w-col-3 w-col-small-6 " style="margin-bottom: 30px;">
+                    <div class="card">
+                       <img src="img/gil.png" style="height: 300px; width: 100%" class="card-img-top">
+ 
+                         <div class="card-body">
+                              <div class="teamlabel">YOHANA MIDAMI</div>
+                         </div>
+                         <div class="card-body">
+                             <div class="teamposition">Design &amp; Project Presenter</div>
+ 
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="w-col w-col-3 w-col-small-6 " style="margin-bottom: 30px;">
+                    <div class="card">
+                       <img src="img/gil.png" style="height: 300px; width: 100%" class="card-img-top">
+ 
+                         <div class="card-body">
+                              <div class="teamlabel">RAMADAN JUMA</div>
+                         </div>
+                         <div class="card-body">
+                             <div class="teamposition">Designer &amp; Project Organiser</div>
+ 
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="w-col w-col-3 w-col-small-6 " style="margin-bottom: 30px;">
+                    <div class="card">
+                       <img src="img/gil.png" style="height: 300px; width: 100%" class="card-img-top">
+ 
+                         <div class="card-body">
+                              <div class="teamlabel">DOGLUS JAMES</div>
+                         </div>
+                         <div class="card-body">
+                             <div class="teamposition">Programmer &amp; Project coder</div>
+ 
+                        </div>
+                    </div>
+                 </div>
+            </div>
+    <div id="process" class="w-section section">
+        <h1>DESIGN PROCESS</h1>
+       
+        <div class="w-container processcontainer">
+            <div class="w-row">
+                <div class="w-col w-col-3 w-col-small-6 processitem" style="margin-bottom: 30px" onclick="modal('lowfi')">
+
+
+                     <div class="card">
+                        <img src="img/Lo-fi.png" style="height: 250px; width: 100%" class="card-img-top">
+  
+                          <div class="card-body">
+                            <div class="caption">LOW-FI PROTOTYPE</div>
+
+                          </div>
+                         
+                     </div>
+                 </div>
+                 <div class="w-col w-col-3 w-col-small-6 processitem" style="margin-bottom: 30px" onclick="modal('lowfi')">
+
+
+                    <div class="card">
+                       <img src="img/MockupPage.png" style="height: 250px; width: 100%" class="card-img-top">
+ 
+                         <div class="card-body">
+                            <div class="caption">MEDIUM-FI PROTOTYPE</div>
+                         </div>
+                        
+                    </div>
+                </div>
+
+                <div class="w-col w-col-3 w-col-small-6 processitem" style="margin-bottom: 30px" onclick="modal('lowfi')">
+
+
+                    <div class="card">
+                       <img src="img/hifiimage.jpg" style="height: 250px; width: 100%" class="card-img-top">
+ 
+                         <div class="card-body">
+                            <div class="caption">HI-FI PROTOTYPE</div>
+
+                         </div>
+                        
+                    </div>
+                </div>
+
+                <div class="w-col w-col-3 w-col-small-6 processitem" style="margin-bottom: 30px" onclick="modal('lowfi')">
+
+
+                    <div class="card">
+                       <img src="img/hifiimage.jpg" style="height: 250px; width: 100%" class="card-img-top">
+ 
+                         <div class="card-body">
+                            <div class="caption">HI-FI PROTOTYPE</div>
+
+                         </div>
+                        
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+    <div id="prototypes" class="w-section section">
+        <h1>PROTOTYPES</h1>
+         
+        <div class="w-container processcontainer">
+            <div class="w-row">
+                <div class="w-col w-col-3 w-col-small-6 processitem" style="margin-bottom: 30px" onclick="modal('lowfi')">
+
+
+                     <div class="card">
+                        <img src="img/Lo-fi.png" style="height: 250px; width: 100%" class="card-img-top">
+  
+                          <div class="card-body">
+                            <div class="caption">LOW-FI PROTOTYPE</div>
+
+                          </div>
+                         
+                     </div>
+                 </div>
+                 <div class="w-col w-col-3 w-col-small-6 processitem" style="margin-bottom: 30px" onclick="modal('lowfi')">
+
+
+                    <div class="card">
+                       <img src="img/MockupPage.png" style="height: 250px; width: 100%" class="card-img-top">
+ 
+                         <div class="card-body">
+                            <div class="caption">MEDIUM-FI PROTOTYPE</div>
+                         </div>
+                        
+                    </div>
+                </div>
+
+                <div class="w-col w-col-3 w-col-small-6 processitem" style="margin-bottom: 30px" onclick="modal('lowfi')">
+
+
+                    <div class="card">
+                       <img src="img/hifiimage.jpg" style="height: 250px; width: 100%" class="card-img-top">
+ 
+                         <div class="card-body">
+                            <div class="caption">HI-FI PROTOTYPE</div>
+
+                         </div>
+                        
+                    </div>
+                </div>
+
+                <div class="w-col w-col-3 w-col-small-6 processitem" style="margin-bottom: 30px" onclick="modal('lowfi')">
+
+
+                    <div class="card">
+                       <img src="img/hifiimage.jpg" style="height: 250px; width: 100%" class="card-img-top">
+ 
+                         <div class="card-body">
+                            <div class="caption">HI-FI PROTOTYPE</div>
+
+                         </div>
+                        
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+   
+    </div>
+    <div class="w-section section grey footer">
+        <div class="w-container">
+            <p class="footer-text">Designed By: <a href="https://alphaxad.000webhostapp.com">Alpha Jozee</a></p>
+        </div>
+    </div>
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+
+</body>
+
+</html>
